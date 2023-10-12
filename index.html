@@ -1,0 +1,128 @@
+<!-- 
+Felix Chan
+Period 9 and 10 ODD
+10/12/23 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic CSS</title>
+    <style>
+        /* Part 1
+        body{
+            background-color: cornflowerblue;
+            color: green;
+        }
+
+        div{
+            text-align: center;
+            color:red;
+        }
+
+        span{
+            color:rgba(22,117,221,0.5);
+        } */
+
+        /* Part 2
+        div{
+            text-align: center;
+        }
+
+        img{
+            float: left;
+            padding-right: 20px;
+        } */
+
+        /* Part 4
+        div{
+            font: bold 24pt comic sans ms;
+            text-decoration: underline wavy green;
+        } */
+    </style>
+    <script>
+        /* Part 3
+        function initialize(){
+            halloweenText = document.getElementById("colordiv");
+            fore="black";
+            back="orange";
+            textWidth = 100;
+        }
+        function toggleColor(){
+            var tmp=fore;
+            fore=back;
+            back=tmp;
+            display();
+        }
+        function display(){
+            halloweenText.style.color = fore;
+            halloweenText.style.backgroundColor = back;
+            halloweenText.style.width = textWidth + "%";
+        }
+        function changeWidth(w){
+            textWidth = w;
+            display();
+        }*/
+
+        /*Part 4
+        function initialize(){
+            textOutput = document.getElementById("textdiv");
+            fontSizeOutput = document.getElementById("sizeout");
+            fontSize = 24;
+        }
+        function modifyFontSize(mod){
+            fontSize += mod;
+            if(fontSize < 4){
+                fontSize = 4;
+            }
+            display();
+        }
+        function display(){
+            fontSizeOutput.innerHTML = fontSize;
+            textOutput.style.fontSize = fontSize + "pt";
+        }*/
+    </script>
+</head>
+<body onload="initialize();">
+    <!-- Part 1
+    This is the text on my basic CSS page.
+    <div>
+        This is the text in my <span>span</span> in my div.
+    </div> -->
+
+    <!-- Part 2
+    <div>
+        <img src="doctor who.jpg">
+        <span>CSS stands for Cascading Style Sheets and is a language used to describe the presentation of webpages. It is used to define the look and feel of a website, including its layout, colors, fonts, and other design elements. CSS helps web developers create a consistent look and feel across multiple webpages and devices. It also helps them create a visually appealing and interactive web experience for users. CSS can be used to control the layout of multiple webpages at once, helping to make a website look more unified. It is also used to create responsive designs, which adapt to different devices and screen sizes. CSS is an essential part of web development as it gives developers the ability to create a unique and visually appealing website. It has become increasingly important, as more people now access websites on different devices and screen sizes. CSS is a powerful tool that can be used to create visually stunning and interactive websites, and is an essential component of web development.</span>
+    </div>   
+    <hr/>
+
+    <h1>Old Doctors</h1>
+    <img src="images/jon pertwee.jpg">
+    <img src="images/tom baker.jpg">
+    <img src="images/matt smith.jpg">  -->
+
+    <!-- Part 3
+    <div id="colordiv">
+        Click the button to switch me from black to orange and back again and again. Happy Halloween.
+    </div>
+    <p>
+        <button onclick="toggleColor();">Toggle Colors</button>
+        <button onclick="changeWidth(25);">25% Width</button>
+        <button onclick="changeWidth(50);">50% Width</button>
+        <button onclick="changeWidth(75);">75% Width</button>
+        <button onclick="changeWidth(100);">100% Width</button>
+    </p> -->
+
+    <!-- Part 4
+    <div id="textdiv">
+        I am a wonderful example of how fonts work!
+    </div>
+    <hr/>
+    <p>
+        <div>Current font size: <span id="sizeout"></span>point</div>
+        <button onclick="modifyFontSize(1);">Font Size ++</button>
+        <button onclick="modifyFontSize(-1);">Font Size --</button>
+    </p> -->
+</body>
+</html>
