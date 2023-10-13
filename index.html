@@ -8,6 +8,7 @@ Period 9 and 10 ODD
 <html lang="en">
 <head>
     <title>Basic CSS</title>
+    <link rel="stylesheet" href="css test file.css">
     <style>
         /* Part 1
         body{
@@ -38,6 +39,13 @@ Period 9 and 10 ODD
         div{
             font: bold 24pt comic sans ms;
             text-decoration: underline wavy green;
+        } */
+
+        /* Part 6
+        a{
+            font: 24pt arial;
+            color: blue;
+            text-decoration: none;
         } */
     </style>
     <script>
@@ -80,6 +88,27 @@ Period 9 and 10 ODD
         function display(){
             fontSizeOutput.innerHTML = fontSize;
             textOutput.style.fontSize = fontSize + "pt";
+        }*/
+
+        /* Part 5
+        function initialize(){
+            numberOutput = document.getElementById("numout");
+            rndNum = 0;
+            display();
+        }*/
+
+        /* Part 6
+        function initialize(){
+            visitsOut = document.getElementById("visits");
+            if(!sessionStorage.numVisits){
+                sessionStorage.numVisits = 0;
+            }else{
+                sessionStorage.numVisits++;
+            }
+            display();
+        }
+        function display(){
+            visitsOut.innerHTML = sessionStorage.numVisits;
         }*/
     </script>
 </head>
@@ -124,5 +153,19 @@ Period 9 and 10 ODD
         <button onclick="modifyFontSize(1);">Font Size ++</button>
         <button onclick="modifyFontSize(-1);">Font Size --</button>
     </p> -->
+
+    <!-- Part 5
+    <h1>This is my great page about external files</h1>
+    <p id="numout"></p>
+    <button onclick="changeNumber();">Change the number</button> -->
+
+    <!-- Part 6
+    <h1>This is my home page</h1>
+    <h2>I have visited here <span id="vivits"></span> times.</h2>
+    <a href="destination.html">Link to Destination Page</a>
+    <br>
+    <br>
+    <a href="http://google.com" target="_blank">Link to Google</a> -->
 </body>
+<script src="utilities.js"></script>
 </html>
